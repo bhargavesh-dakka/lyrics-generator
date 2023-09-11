@@ -2,6 +2,16 @@ import streamlit as st
 import os
 import assemblyai as aai
 st.set_page_config("Lyrics generator","🎶",initial_sidebar_state="collapsed")
+
+
+st.markdown("""<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+            </style><body style='background-color:#0f172a;'></body>""",unsafe_allow_html=True)
+
+
+
+
 # AssemblyAI API Key
 aai.settings.api_key = st.secrets["API_KEY"]
 # Create a transcriber object.
